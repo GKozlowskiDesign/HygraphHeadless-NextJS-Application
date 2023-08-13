@@ -4,9 +4,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const FeaturedPostCard = ({ post }) => (
-  <div className="relative h-72">
-    <div className="absolute rounded-lg bg-center bg-no-repeat bg-cover shadow-md inline-block w-full h-72" style={{ backgroundImage: `url('${post.featuredImage.url}')` }} />
-    <div className="absolute rounded-lg bg-center bg-gradient-to-b opacity-80 from-gray-400 via-gray-700 to-black w-full h-72" />
+  <div className="relative h-72 mb-8 shadow-gray-500 shadow-lg rounded-lg ">
+    <div className="absolute border-2 border-gray-700 rounded-lg bg-center bg-no-repeat bg-cover inline-block w-full h-72" style={{ backgroundImage: `url('${post.featuredImage.url}')` }} />
+    <div className="absolute rounded-lg bg-center bg-gradient-to-tl  from-gray-900  to-black w-full h-72" />
     <div className="flex flex-col rounded-lg p-4 items-center justify-center absolute w-full h-full">
       <p className="text-white mb-4 text-shadow font-semibold text-xs">{moment(post.createdAt).format('MMM DD, YYYY')}</p>
       <p className="text-white mb-4 text-shadow font-semibold text-2xl text-center">{post.title}</p>

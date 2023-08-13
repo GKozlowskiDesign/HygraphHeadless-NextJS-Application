@@ -5,12 +5,12 @@ import Link from 'next/link';
 const PostCard = ({ post }) => {
     console.log(post);
   return (
-    <div className="bg-gradient-to-tl from-black to-gray-900 border border-gray-700 shadow-lg rounded-lg p-0 lg:p-8 pb-12 mb-8">
-        <div className="relative overflow-hidden shadow-md pb-80 mb-6 border rounded-md border-gray-600">
+    <div className="bg-gradient-to-tl from-black to-gray-900 border border-gray-700 shadow-lg shadow-gray-500 rounded-lg p-0 lg:p-8 pb-12 mb-8">
+        <div className="relative overflow-hidden shadow-md pb-80 mb-6rounded-md mx-auto">
             <img 
             src={post.featuredImage.url}
             alt={post.title}
-            className="object-top absolute h-80 w-full object-cover shadow-lg rounded-t-lg lg:rounded-lg"
+            className=" border-2 border-gray-900 object-top absolute w-full object-cover shadow-lg rounded-t-lg lg:rounded-lg"
             />
         </div>
         <h1 className="transition duration-500 text-center mb-8 cursor-pointer text-white

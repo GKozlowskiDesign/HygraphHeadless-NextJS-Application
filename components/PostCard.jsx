@@ -5,48 +5,66 @@ import Link from 'next/link';
 const PostCard = ({ post }) => {
     console.log(post);
   return (
-    <div className="bg-gradient-to-tl from-black to-gray-900 border border-gray-700 shadow-lg shadow-gray-500 rounded-lg p-0 lg:p-8 pb-12 mb-8">
-        <div className="relative overflow-hidden shadow-md pb-80 mb-6rounded-md mx-auto">
-            <img 
-            src={post.featuredImage.url}
-            alt={post.title}
-            className=" border-2 border-gray-900 object-top absolute w-full object-cover shadow-lg rounded-t-lg lg:rounded-lg"
-            />
-        </div>
-        <h1 className="transition duration-500 text-center mb-8 cursor-pointer text-white
-        hover:text-indigo-500 text-3xl font-semibold">
-            <Link href={`/post/${post.slug}`}>
-                {post.title}
-            </Link>
-        </h1>
-        <div className="block lg:flex text-center items-center justify-center mb-8 w-full">
-                <div className="flex items-center justify-center mb-4 lg:mb-0 w-full lg:w-auto mr-8">
+    <div className="bg-white 
+    border-b-2 border-gray-200 shadow-sm lg:p-4">
+        <div className="grid grid-cols-6">
+           
+            {/*Column Two*/}
+            <div className="flex justify-left mb-2 lg:mb-0 w-full lg:w-auto mr-4 col-span-2 bg-gray-50 mx-auto rounded-xl p-1">
                     <img 
                     src={post.author.photo.url}
                     alt={post.author.name}
-                    height="30px"
-                    width="30px"
+                    height="20px"
+                    width="20px"
                     className="align-middle rounded-full"
                     />
-                    <p className="inline align-middle text-gray-700 ml-2 text-lg">{post.author.name}</p>
-                </div>
-                <div className="font-medium text-gray-700">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 inline mr-2 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                    </svg>
-                    <span>
-                        {moment(post.createdAt).format('MMM DD, YYYY')}
-                    </span>
-                </div>
+                    <p className="inline text-center justify-centerp pt-1 md:pt-0 text-gray-700 ml-2 text-xs  md:text-sm">{post.author.name}</p>
+                    
+                    
+                    
             </div>
-            <p className="text-center text-lg text-gray-500 font-normal px-4 lg:px-20 mb-8">{post.excerpt}</p>
-            <div className="text-center">
+            {/*Column Three*/}
+            <div className="font-medium items-right  justify-center  text-gray-700 col-span-4 mb-4 lg:mb-0 flex">
+                <span>
+                    {moment(post.createdAt).format('MMM DD, YYYY')}
+                </span>
+            </div>
+        </div>
+
+        <div className="grid-cols-1 grid">
+            <h1 className="transition duration-500 text-left mb-8 md:mt-2  mr-4 p-5 cursor-pointer text-black
+            hover:text-indigo-500 text-xl">
                 <Link href={`/post/${post.slug}`}>
-                    <span className="transition duration-500 transform hover:-translate-y-1 inline-block bg-indigo-500 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer">
-                        Continue Reading
-                    </span>
+                    {post.title}
+                </Link>
+            </h1>
+        </div>
+        
+       
+                
+        <div className="grid-cols-4 grid gap-6">
+            {/*Column One*/}
+            <div className="text-left items-center justify-center mb-2 w-full col-span-3">
+                <Link href={`/post/${post.slug}`}>
+                        <p className="text-sm text-black font-normal mx-auto mb-8">{post.excerpt}</p>
                 </Link>
             </div>
+            
+            {/*Column Two*/}
+            <div className="mb-2 rounded-md mx-auto">
+            <Link href={`/post/${post.slug}`}>
+                <img 
+                src={post.featuredImage.url}
+                alt={post.title}
+                className="
+                w-full 
+                shadow-lg
+                rounded-md 
+                "
+                />
+            </Link>
+            </div>
+        </div>
     </div>
     )
 };

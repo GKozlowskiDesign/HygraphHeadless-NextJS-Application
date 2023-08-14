@@ -5,8 +5,8 @@ import Link from 'next/link';
 const PostCard = ({ post }) => {
     console.log(post);
   return (
-    <div className="bg-white 
-    border-b-2 border-gray-200 shadow-sm lg:p-4">
+    <div className="bg-white mt-4 mb-4 pt-4
+    border-y-2 border-gray-200 shadow-sm lg:p-2">
         <div className="grid grid-cols-6">
            
             {/*Column Two*/}
@@ -32,7 +32,7 @@ const PostCard = ({ post }) => {
         </div>
 
         <div className="grid-cols-1 grid">
-            <h1 className="transition duration-500 text-left mb-8 md:mt-2  mr-4 p-5 cursor-pointer text-black
+            <h1 className="transition duration-500 text-left mb-2 md:mt-2  mr-4 p-5 cursor-pointer text-black
             hover:text-indigo-500 text-xl">
                 <Link href={`/post/${post.slug}`}>
                     {post.title}
@@ -44,7 +44,7 @@ const PostCard = ({ post }) => {
                 
         <div className="grid-cols-4 grid gap-6">
             {/*Column One*/}
-            <div className="text-left items-center justify-center mb-2 w-full col-span-3">
+            <div className="p-8 text-left items-center justify-center mb-2 w-full col-span-3">
                 <Link href={`/post/${post.slug}`}>
                         <p className="text-sm text-black font-normal mx-auto mb-8">{post.excerpt}</p>
                 </Link>

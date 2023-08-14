@@ -10,17 +10,16 @@ export default function Home({ posts }) {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
     
         <div className="lg:col-span-8 col-span-1">
+        <div><About /></div>
+
           {posts.map((post, index) => (
             <PostCard key={index} post={post.node} />
           ))}
         </div>
-        <div className="lg:col-span-4 col-span-1 lg:border-l-2 pl-6">
-          <div className="lg:sticky relative top-8">
-          <div className='hidden lg:block md:hidden'><About /></div>
-
-          <div><PostWidget /></div>
-          <div><Categories /></div>
-
+        <div className="lg:col-span-4 col-span-1 border-y-2 md:border-y-0 lg:border-l-2 pl-6">
+          <div className="lg:sticky relative top-8 md:border-y-2 ">
+            <div><PostWidget /></div>
+            <div><Categories /></div>
           </div>
         </div>
       </div>

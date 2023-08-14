@@ -3,11 +3,10 @@ import React from 'react';
 const Biography = () => {
 
     return (
-<div className="
-    border-b-2 border-gray-200 shadow-sm">
-          <h3 className="text-xl text-black mb-2">Biography</h3>
+<div className='mb-2 border-y-2'>
+          <h3 className="text-xl text-black mb-2 p-5">Biography</h3>
         <div className='grid grid-cols-1 mt-2 mb-10 text-left'>
-            <div className='text-sm p-7'><p>As a Business Information Systems Graduate, Full-Stack Developer, and 
+            <div className='text-sm p-8'><p>As a Business Information Systems Graduate, Full-Stack Developer, and 
                 AWS Certified Cloud Practitioner, I excel in navigating teams through technical 
                 challenges, cloud migration initiatives, workload architecture examinations, and 
                 high-risk issue mitigation. My proficiency bridges the gap between technical and 

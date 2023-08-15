@@ -1,6 +1,8 @@
 import React from "react";
 import moment from 'moment';
 import Link from 'next/link';
+import Image from 'next/image';
+
 
 const PostCard = ({ post }) => {
     console.log(post);
@@ -11,7 +13,7 @@ const PostCard = ({ post }) => {
            
             {/*Column Two*/}
             <div className="flex justify-left mb-2 lg:mb-0 w-full lg:w-auto mr-4 col-span-2 bg-gray-50 mx-auto rounded-xl p-1">
-                    <img 
+                    <Image 
                     src={post.author.photo.url}
                     alt={post.author.name}
                     height="20px"
@@ -53,7 +55,7 @@ const PostCard = ({ post }) => {
             {/*Column Two*/}
             <div className="mb-2 rounded-md mx-auto">
             <Link href={`/post/${post.slug}`}>
-                <img 
+                <Image
                 src={post.featuredImage.url}
                 alt={post.title}
                 className="

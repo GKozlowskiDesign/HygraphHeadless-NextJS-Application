@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@graphcms/react-image": "^1.1.0",
     "@splinetool/react-spline": "^2.2.6",
     "@splinetool/runtime": "^0.9.419",
     "@vercel/analytics": "^1.0.2",

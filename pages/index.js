@@ -1,4 +1,4 @@
-import { PostCard, Categories, PostWidget } from '../components';
+import { PostCard, Categories } from '../components';
 import { getPosts } from '../services';
 import About  from '../components/Portfolio/About'
 
@@ -14,7 +14,6 @@ export default function Home({ posts }) {
         </div>
         <div className="lg:col-span-4 col-span-1 border-y-2 md:border-y-0 lg:border-l-2 pl-6">
           <div className="lg:sticky relative top-8 md:border-y-2 ">
-            <div><PostWidget /></div>
             <div><Categories /></div>
           </div>
         </div>

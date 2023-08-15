@@ -1,7 +1,6 @@
 import React from "react";
 import moment from 'moment';
 import Link from 'next/link';
-import Image from 'next/image';
 
 
 const PostCard = ({ post }) => {
@@ -13,11 +12,11 @@ const PostCard = ({ post }) => {
            
             {/*Column Two*/}
             <div className="flex justify-left mb-2 lg:mb-0 w-full lg:w-auto mr-4 col-span-2 bg-gray-50 mx-auto rounded-xl p-1">
-                    <Image 
+                    <img 
                     src={post.author.photo.url}
                     alt={post.author.name}
-                    height="20px"
-                    width="20px"
+                    height="20"
+                    width="20"
                     className="align-middle rounded-full"
                     />
                     <p className="inline text-center justify-centerp pt-1 md:pt-0 text-gray-700 ml-2 text-xs  md:text-sm">{post.author.name}</p>
@@ -55,7 +54,7 @@ const PostCard = ({ post }) => {
             {/*Column Two*/}
             <div className="mb-2 rounded-md mx-auto">
             <Link href={`/post/${post.slug}`}>
-                <Image
+                <img
                 src={post.featuredImage.url}
                 alt={post.title}
                 className="

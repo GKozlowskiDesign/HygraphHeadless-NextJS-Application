@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Layout } from '../components'
 import '@/styles/globals.scss'
-import { Analytics } from '@vercel/analytics'
+import { Analytics } from '@vercel/analytics/react';
 
 export default function App({ Component, pageProps }) {
   return (
@@ -9,7 +9,9 @@ export default function App({ Component, pageProps }) {
   <Layout>
   <Component {...pageProps} />
   <Analytics />
+
   </Layout>
+
   
   )
 }

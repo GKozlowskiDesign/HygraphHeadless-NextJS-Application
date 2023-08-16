@@ -11,7 +11,7 @@ export default function Home({ posts }) {
       <Head>
         <title>GaryKozlowski</title>
         <link rel="icon" href="/favicon.png" />
-        <meta description="Checkout GKDesign the Portfolio Website of Gary Kozlowski As a Business Information Systems Graduate, Full-Stack Developer, and AWS Certified Cloud Practitioner."
+        <meta description="Checkout GKDesign the Portfolio Website of Gary Kozlowski As a Business Information Systems Graduate, Full-Stack Developer, and AWS Certified Cloud Practitioner." />
       </Head>
       <div className="container mx-auto px-10 mb-8 ">
         {/*<FeaturedPosts/>*/}

@@ -18,7 +18,7 @@ export default function Home({ posts }) {
           <div className="lg:sticky relative top-8">
           <div className='hidden lg:block md:hidden'><About /></div>
 
-          <div><PostWidget /></div>
+          <div className="hidden"><PostWidget /></div>
           <div><Categories /></div>
 
           </div>

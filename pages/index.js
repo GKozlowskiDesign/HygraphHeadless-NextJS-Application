@@ -26,7 +26,7 @@ export default function Home({ posts }) {
               {/* Biography Paragraphs*/}
               <div className='hidden lg:block md:hidden' alt="Biography Section"><About /></div>
               {/* List of Posts */}
-              <div className="hidden" alt="Listed Posts"><PostWidget /></div>
+              <div alt="Listed Posts"><PostWidget /></div>
               {/* List of Categories */}
               <div alt="Post Categories"><Categories /></div>
               </div>

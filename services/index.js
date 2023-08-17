@@ -184,7 +184,7 @@ export const getCategoryPost = async (slug) => {
 
 export const getFeaturedPosts = async () => {
   const query = gql`
-    query GetCategoryPost() {
+    query GetCategoryPost {
       posts(where: {featuredPost: true}) {
         author {
           name
@@ -237,7 +237,7 @@ export const getComments = async (slug) => {
 
 export const getRecentPosts = async () => {
   const query = gql`
-    query GetPostDetails() {
+    query GetPostDetails {
       posts(
         orderBy: createdAt_ASC
         last: 3

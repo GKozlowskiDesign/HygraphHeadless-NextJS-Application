@@ -36,9 +36,9 @@ const PostDetail = ({ post }) => {
         return <h4 key={index} 
                  className="text-xl font-semibold mb-4 text-gray-600">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h4>;
 
-         case 'link':
-        return <a href={obj.href} key={index} 
-                 className="text-xl font-semibold mb-4 text-gray-600">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</a>;
+        case 'heading-six':
+        return <h6 key={index} 
+                 className="text-lg font-semibold mb-4 text-gray-600">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h6>;
 
         
       case 'image':

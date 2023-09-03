@@ -20,6 +20,10 @@ const PostDetail = ({ post }) => {
       if (obj.underline) {
         modifiedText = (<u key={index}>{text}</u>);
       }
+
+      if (obj.link) {
+        modifiedText = (<a key={index}>{text}</a>);
+      }
       
    
     
@@ -39,24 +43,6 @@ const PostDetail = ({ post }) => {
         return <h4 key={index} 
                  className="text-xl font-semibold mb-4 text-gray-600">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h4>;
 
-       case "block-quote":
-              return(
-                <blockquote key={index} className="text-md mb-4">
-                  {modifiedText.map((item, i) => (
-                    <React.Fragment key={i}>"{item}"</React.Fragment>
-                  ))}
-                </blockquote>
-              );
-
-
-       case "link":
-              return(
-                <link key={index} className="text-md mb-4">
-                  {modifiedText.map((item, i) => (
-                    <React.Fragment key={i}>"{item}"</React.Fragment>
-                  ))}
-                </link>
-              );
         
       case 'image':
         return (

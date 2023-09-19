@@ -56,7 +56,7 @@ const PostDetail = ({ post }) => (
                       h5: ({ children }) => <h5 className="text-black">{children}</h5>,
                       h6: ({ children }) => <h6 className="text-black">{children}</h6>,
                       p: ({ children }) => <p className="text-black">{children}</p>,
-                      a: ({ children }) => <a className="text-black">{children}</a>,
+                      a: ({ href }) => <a className="text-black">{string}</a>,
                       bold: ({ children }) => <b className="text-black">{children}</b>,
                       underline: ({ children }) => <u className="text-black">{children}</u>,
             

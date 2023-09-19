@@ -56,9 +56,26 @@ const PostDetail = ({ post }) => (
                       h5: ({ children }) => <h5 className="text-black">{children}</h5>,
                       h6: ({ children }) => <h6 className="text-black">{children}</h6>,
                       p: ({ children }) => <p className="text-black">{children}</p>,
-                      a: ({ children }) => <a className="text-black">{children}</a>,
                       bold: ({ children }) => <b className="text-black">{children}</b>,
                       underline: ({ children }) => <u className="text-black">{children}</u>,
+                  a: ({ children, openInNewTab, href, rel, ...rest }) => {
+          if (href.match(/^https?:\/\/|^\/\//i)) {
+            return (
+              <a
+                href={href}
+                target={openInNewTab ? '_blank' : '_self'}
+                rel={rel || 'noopener noreferrer'}
+                {...rest}
+              >
+                {children}
+              </a>
+            );
+          }
+
+          return (
+            <Link href={href}>
+              <a {...rest}>{children}</a>
+            </Link>
             
             
                 }}/>

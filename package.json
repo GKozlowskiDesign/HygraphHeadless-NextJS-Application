@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@graphcms/rich-text-react-renderer": "^0.6.1",
     "@splinetool/react-spline": "^2.2.6",
     "@splinetool/runtime": "^0.9.419",
     "autoprefixer": "10.4.14",

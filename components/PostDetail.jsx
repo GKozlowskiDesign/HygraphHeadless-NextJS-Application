@@ -49,16 +49,16 @@ const PostDetail = ({ post }) => (
       <h1 className="mb-8 text-3xl font-semibold">{post.title}</h1>
       <RichText content={post.content.raw} 
                 renderers={{
-                      h1: ({ children }) => <h1 className="text-black">{children}</h1>,
-                      h2: ({ children }) => <h2 className="text-black">{children}</h2>,
-                      h3: ({ children }) => <h3 className="text-black">{children}</h3>,
-                      h4: ({ children }) => <h4 className="text-black">{children}</h4>,
-                      h5: ({ children }) => <h5 className="text-black">{children}</h5>,
-                      h6: ({ children }) => <h6 className="text-black">{children}</h6>,
-                      p: ({ children }) => <p className="text-black">{children}</p>,
-                      a: ({ children, href }) => <a href={href} className="text-black">{children}</a>,
+                      h1: ({ children }) => <h1 className="text-black font-bold text-3xl">{children}</h1>,
+                      h2: ({ children }) => <h2 className="text-black font-bold text-2xl">{children}</h2>,
+                      h3: ({ children }) => <h3 className="text-black font-bold text-xl">{children}</h3>,
+                      h4: ({ children }) => <h4 className="text-black font-bold text-lg">{children}</h4>,
+                      h5: ({ children }) => <h5 className="text-black font-bold text-base">{children}</h5>,
+                      h6: ({ children }) => <h6 className="text-black font-bold text-sm">{children}</h6>,
+                      p: ({ children }) => <p className="text-black font-light">{children}</p>,
+                      a: ({ children, href }) => <a href={href} className="text-blue">{children}</a>,
                       bold: ({ children }) => <b className="text-black">{children}</b>,
-                      underline: ({ children }) => <u className="text-black">{children}</u>,
+                      underline: ({ children }) => <u className="font-bold">{children}</u>,
             
             
                 }}/>

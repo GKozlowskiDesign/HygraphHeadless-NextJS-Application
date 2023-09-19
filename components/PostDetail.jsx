@@ -62,7 +62,7 @@ const PostDetail = ({ post }) => {
           <img src={post.featuredImage.url} alt="" className="object-top h-full w-full object-cover  shadow-lg rounded-t-lg lg:rounded-lg" />
         </div>
         <div className="px-4 lg:px-0">
-          <div className="flex items-center mb-8 w-full">
+          <div className="flex items-center mb-8 w-full"> 
             <div className="hidden md:flex justify-center lg:mb-0 lg:w-auto mr-8 items-center">
               <img
                 alt={post.author.name}
@@ -81,12 +81,11 @@ const PostDetail = ({ post }) => {
             </div>
           </div>
           <h1 className="mb-8 text-3xl text-black font-semibold">{post.title}</h1>
-          <RichText content={post.content.raw} />
-          {post.content.raw.children.map((typeObj, index) => {
+          <RichText content={post.content.raw.children.map((typeObj, index) => {
             const children = typeObj.children.map((item, itemindex) => getContentFragment(itemindex, item.text, item));
 
             return getContentFragment(index, children, typeObj, typeObj.type);
-          })}
+          })} />
         </div>
       </div>
 

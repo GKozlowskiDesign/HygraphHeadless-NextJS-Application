@@ -51,7 +51,7 @@ const PostDetail = ({ post }) => (
                 renderers={{
                       h1: ({ children }) => <h1 className="text-black font-bold text-3xl">{children}</h1>,
                       h2: ({ children }) => <h2 className="text-black font-bold text-2xl">{children}</h2>,
-                      h3: ({ children }) => <h3 className="text-blue-800 font-bold text-2xl">{children}</h3>,
+                      h3: ({ children }) => <h3 className="text-blue-800 font-bold text-2xl underline">{children}</h3>,
                       h4: ({ children }) => <h4 className="text-black font-bold text-lg">{children}</h4>,
                       h5: ({ children }) => <h5 className="text-black font-bold text-base">{children}</h5>,
                       h6: ({ children }) => <h6 className="text-black font-bold text-sm">{children}</h6>,
@@ -60,7 +60,7 @@ const PostDetail = ({ post }) => (
                       bold: ({ children }) => <b className="text-black">{children}</b>,
                       underline: ({ children }) => <u className="text-light">{children}</u>,
                       unorderedlist: ({ children }) => <ul className="text-light">{children}</ul>,
-                      orderedlist: ({ children }) => <u className="text-light">{children}</u>,
+                      orderedlist: ({ children }) => <ol className="text-light">{children}</ol>,
 
                   
             

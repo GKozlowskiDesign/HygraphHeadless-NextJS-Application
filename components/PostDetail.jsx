@@ -71,14 +71,14 @@ const PostDetail = ({ post }) => (
               </a>
             );
           }
-
-          return (
+                    return (
             <Link href={href}>
               <a {...rest}>{children}</a>
             </Link>
-            
-            
-                }}/>
+          );
+          },
+       }}
+    />
 
     </div>
   </div>

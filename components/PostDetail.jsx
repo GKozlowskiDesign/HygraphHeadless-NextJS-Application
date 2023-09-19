@@ -49,16 +49,16 @@ const PostDetail = ({ post }) => (
       <h1 className="mb-8 text-3xl font-semibold">{post.title}</h1>
       <RichText content={post.content.raw} 
                 renderers={{
-                      h1: ({ children }) => <h1 className="text-white">{children}</h1>,
-                      h2: ({ children }) => <h2 className="text-white">{children}</h2>,
-                      h3: ({ children }) => <h3 className="text-white">{children}</h3>,
-                      h4: ({ children }) => <h4 className="text-white">{children}</h4>,
-                      h5: ({ children }) => <h5 className="text-white">{children}</h5>,
-                      h6: ({ children }) => <h6 className="text-white">{children}</h6>,
-                      p: ({ children }) => <p className="text-white">{children}</p>,
-                      a: ({ children }) => <a className="text-white">{children}</a>,
-                      bold: ({ children }) => <b className="text-white">{children}</b>,
-                      underline: ({ children }) => <u className="text-white">{children}</u>,
+                      h1: ({ children }) => <h1 className="text-black">{children}</h1>,
+                      h2: ({ children }) => <h2 className="text-black">{children}</h2>,
+                      h3: ({ children }) => <h3 className="text-black">{children}</h3>,
+                      h4: ({ children }) => <h4 className="text-black">{children}</h4>,
+                      h5: ({ children }) => <h5 className="text-black">{children}</h5>,
+                      h6: ({ children }) => <h6 className="text-black">{children}</h6>,
+                      p: ({ children }) => <p className="text-black">{children}</p>,
+                      a: ({ children }) => <a className="text-black">{children}</a>,
+                      bold: ({ children }) => <b className="text-black">{children}</b>,
+                      underline: ({ children }) => <u className="text-black">{children}</u>,
             
             
                 }}/>

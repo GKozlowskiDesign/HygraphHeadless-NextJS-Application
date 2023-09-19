@@ -57,9 +57,9 @@ const PostDetail = ({ post }) => (
                       h6: ({ children }) => <h6 className="text-white">{children}</h6>,
                       p: ({ children }) => <p className="text-white">{children}</p>,
                       a: ({ children }) => <a className="text-white">{children}</a>,
-                      bold: ({ children }) => <bold className="text-white">{children}</bold>,
-                      underline: ({ children }) => <underline className="text-white">{children}</underline>,
-                      img: ({ src }) => <img className="text-white">{src}</img>
+                      bold: ({ children }) => <b className="text-white">{children}</b>,
+                      underline: ({ children }) => <u className="text-white">{children}</u>,
+            
             
                 }}/>
 

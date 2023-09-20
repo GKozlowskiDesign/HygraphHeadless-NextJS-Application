@@ -1,7 +1,5 @@
 import React from 'react';
 import Spline from '@splinetool/react-spline';
-
-
 const Hero = () => {
 
   return (
@@ -18,6 +16,5 @@ const Hero = () => {
 
   )
 }
-
 export default Hero;
 

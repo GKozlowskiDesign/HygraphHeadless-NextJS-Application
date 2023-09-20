@@ -1,7 +1,6 @@
 import React from 'react';
 import Spline from '@splinetool/react-spline';
 const Hero = () => {
-
   return (
   <div name="hero" className='bg-white pb-10 w-full'>
         <div className='flex items-center justify-center h-96 gap-2'>     
@@ -13,8 +12,6 @@ const Hero = () => {
             </div>
         </div>    
   </div>
-
-  )
-}
+  )}
 export default Hero;
 

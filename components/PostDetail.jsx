@@ -1,5 +1,4 @@
 import React from 'react'
-
 import moment from 'moment'
 import { RichText } from '@graphcms/rich-text-react-renderer'
 
@@ -8,7 +7,7 @@ const PostDetail = ({ post }) => (
     <div className="relative mb-6 overflow-hidden shadow-md">
       <img
         src={post.featuredImage.url}
-        alt=""
+        alt="Featured Post Image"
         className="h-full w-full rounded-t-lg object-cover  object-top shadow-lg lg:rounded-lg"
       />
     </div>
@@ -51,12 +50,12 @@ const PostDetail = ({ post }) => (
                 renderers={{
                       h1: ({ children }) => <h1 className="text-black font-bold text-3xl">{children}</h1>,
                       h2: ({ children }) => <h2 className="text-black font-bold text-2xl mt-4">{children}</h2>,
-                      h3: ({ children }) => <h3 className="text-blue-800 font-bold text-2xl underline mb-6 hover:text-sky-500">{children}</h3>,
+                      h3: ({ children }) => <h3 className="text-blue-800 font-bold text-2xl underline mb-6 hover:border-sky-500">{children}</h3>,
                       h4: ({ children }) => <h4 className="text-stone-700 text-base font-medium mt-2">{children}</h4>,
                       h5: ({ children }) => <h5 className="text-black text-base">{children}</h5>,
                       h6: ({ children }) => <h6 className="text-black">{children}</h6>,
                       p: ({ children }) => <p className="text-black text-sm font-light mb-2">{children}</p>,
-                      a: ({ children, href }) => <a href={href} className="text-blue-800">{children}</a>,
+                      a: ({ children, href }) => <a href={href} className="text-blue-800 hover:text-sky-500">{children}</a>,
                       b: ({ children }) => <b className="text-black font-black">{children}</b>,
                       underline: ({ children }) => <u className="text-light">{children}</u>,
                       ul: ({ children }) => <ul className="mx-4 font-light text-sm text-left leading-6 list-disc">{children}</ul>,

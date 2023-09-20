@@ -57,11 +57,11 @@ const PostDetail = ({ post }) => (
                       h6: ({ children }) => <h6 className="text-black">{children}</h6>,
                       p: ({ children }) => <p className="text-black text-sm font-light mb-2">{children}</p>,
                       a: ({ children, href }) => <a href={href} className="text-blue-800">{children}</a>,
-                      b: ({ children }) => <b className="text-black font-bold">{children}</b>,
+                      b: ({ children }) => <b className="text-black font-black">{children}</b>,
                       underline: ({ children }) => <u className="text-light">{children}</u>,
-                      ul: ({ children }) => <ul className="mx-4 font-light text-sm text-left leading-4 list-disc">{children}</ul>,
-                      ol: ({ children }) => <ol className="mx-4 font-light text-sm text-left leading-4 list-decimal">{children}</ol>,
-                     li: ({ children }) => <li className="mx-4 font-light text-sm text-left leading-4">{children}</li>,
+                      ul: ({ children }) => <ul className="mx-4 font-light text-sm text-left leading-6 list-disc">{children}</ul>,
+                      ol: ({ children }) => <ol className="mx-4 font-light text-sm text-left leading-6 list-decimal">{children}</ol>,
+                     li: ({ children }) => <li className="mx-4 font-light text-sm text-left leading-6">{children}</li>,
                     code_block: ({ children }) => <code className="mx-24 mb-8 text-sm sm:text-sm inline-flex text-left items-center space-x-4 bg-gray-700 text-gray-200 rounded-md p-8">{children}</code>,
 
                 }}/>

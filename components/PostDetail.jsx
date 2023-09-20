@@ -46,7 +46,7 @@ const PostDetail = ({ post }) => (
         </div>
       </div>
       <h1 className="mb-8 text-3xl font-semibold">{post.title}</h1>
-      <RichText content={post.content.raw} 
+      <RichText className="rounded-lg" content={post.content.raw} 
                 renderers={{
                       h1: ({ children }) => <h1 className="text-black font-bold text-3xl">{children}</h1>,
                       h2: ({ children }) => <h2 className="text-black font-bold text-2xl mt-4 mb-2">{children}</h2>,

@@ -1,9 +1,6 @@
 import React from "react";
 import { Header } from './';
 import Footer from "./Portfolio/Footer";
-
-
-
 const Layout = ({children}) => {
   return (
     <>
@@ -11,7 +8,5 @@ const Layout = ({children}) => {
     {children}
     <Footer />
     </>
-  )
-};
-
+  )};
 export default Layout;

@@ -17,7 +17,7 @@ const PostDetail = ({ post }) => (
         <div className="mr-8 hidden items-center justify-center md:flex lg:mb-0 lg:w-auto">
           <img
             alt={post.author.name}
-            height="30px"
+            height="25px"
             width="30px"
             className="rounded-full align-middle"
             src={post.author.photo.url}
@@ -51,13 +51,13 @@ const PostDetail = ({ post }) => (
                 renderers={{
                       h1: ({ children }) => <h1 className="text-black font-bold text-3xl">{children}</h1>,
                       h2: ({ children }) => <h2 className="text-black font-bold text-2xl">{children}</h2>,
-                      h3: ({ children }) => <h3 className="text-blue-800 font-bold text-2xl underline mb-6 hover:bg-sky-500">{children}</h3>,
+                      h3: ({ children }) => <h3 className="text-blue-800 font-bold text-2xl underline mb-6 hover:text-sky-500">{children}</h3>,
                       h4: ({ children }) => <h4 className="text-black text-lg">{children}</h4>,
                       h5: ({ children }) => <h5 className="text-black text-base">{children}</h5>,
-                      h6: ({ children }) => <h6 className="text-black text-sm">{children}</h6>,
-                      p: ({ children }) => <p className="text-black font-light">{children}</p>,
+                      h6: ({ children }) => <h6 className="text-black">{children}</h6>,
+                      p: ({ children }) => <p className="text-black text-sm font-light mb-2">{children}</p>,
                       a: ({ children, href }) => <a href={href} className="text-blue-800">{children}</a>,
-                      b: ({ children }) => <b className="text-black">{children}</b>,
+                      b: ({ children }) => <b className="text-black font-bold">{children}</b>,
                       underline: ({ children }) => <u className="text-light">{children}</u>,
                       ul: ({ children }) => <ul className="mx-4 font-light text-sm text-left leading-4 list-disc">{children}</ul>,
                       ol: ({ children }) => <ol className="mx-4 font-light text-sm text-left leading-4 list-decimal">{children}</ol>,

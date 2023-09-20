@@ -57,10 +57,10 @@ const PostDetail = ({ post }) => (
                       h6: ({ children }) => <h6 className="text-black font-bold text-sm">{children}</h6>,
                       p: ({ children }) => <p className="text-black font-light">{children}</p>,
                       a: ({ children, href }) => <a href={href} className="text-blue-800">{children}</a>,
-                      bold: ({ children }) => <b className="text-black">{children}</b>,
+                      b: ({ children }) => <b className="text-black">{children}</b>,
                       underline: ({ children }) => <u className="text-light">{children}</u>,
-                      unorderedlist: ({ children }) => <ul className="text-light">{children}</ul>,
-                      orderedlist: ({ children }) => <ol className="text-light">{children}</ol>,
+                      ul: ({ children }) => <ul className="text-light">{children}</ul>,
+                      ol: ({ children }) => <ol className="text-light">{children}</ol>,
 
                   
             

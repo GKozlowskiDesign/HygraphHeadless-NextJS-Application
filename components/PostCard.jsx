@@ -10,7 +10,7 @@ const PostCard = ({ post }) => {
         <div className="grid grid-cols-6">
          {/*    Column One   */}     
             <div className="flex justify-left mb-2 lg:mb-0 w-full lg:w-auto mr-4 col-span-2 bg-gray-50 mx-auto rounded-xl p-1">
-                <p className="inline text-center justify-center pt-1 md:pt-0 text-gray-700 ml-2 text-xs">{post.author.name}</p>        
+                <p className="inline text-center justify-center pt-1 md:pt-0 text-gray-700 text-xs">{post.author.name}</p>        
             </div>  
          {/*    Column Two       */}
             <div className="font-medium items-right  justify-center  text-gray-700 col-span-4 mb-4 lg:mb-0 flex">

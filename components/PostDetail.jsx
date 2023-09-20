@@ -62,6 +62,8 @@ const PostDetail = ({ post }) => (
                       ul: ({ children }) => <ul className="mx-4 font-light text-sm text-left leading-4 list-disc">{children}</ul>,
                       ol: ({ children }) => <ol className="mx-4 font-light text-sm text-left leading-4 list-decimal">{children}</ol>,
                      li: ({ children }) => <li className="mx-4 font-light text-sm text-left leading-4">{children}</li>,
+                    code_block: ({ children }) => <code className="mx-24 mb-8 text-sm sm:text-sm inline-flex text-left items-center space-x-4 bg-gray-700 text-gray-200 rounded-md p-8">{children}</code>,
+
                 }}/>
 
     </div>

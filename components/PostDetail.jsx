@@ -50,7 +50,7 @@ const PostDetail = ({ post }) => (
       <RichText content={post.content.raw} 
                 renderers={{
                       h1: ({ children }) => <h1 className="text-black font-bold text-3xl">{children}</h1>,
-                      h2: ({ children }) => <h2 className="text-black font-bold text-2xl">{children}</h2>,
+                      h2: ({ children }) => <h2 className="text-black font-bold text-2xl mt-4">{children}</h2>,
                       h3: ({ children }) => <h3 className="text-blue-800 font-bold text-2xl underline mb-6 hover:text-sky-500">{children}</h3>,
                       h4: ({ children }) => <h4 className="text-stone-700 text-base font-semibold mt-2">{children}</h4>,
                       h5: ({ children }) => <h5 className="text-black text-base">{children}</h5>,

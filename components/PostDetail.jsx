@@ -59,8 +59,9 @@ const PostDetail = ({ post }) => (
                       a: ({ children, href }) => <a href={href} className="text-blue-800">{children}</a>,
                       b: ({ children }) => <b className="text-black">{children}</b>,
                       underline: ({ children }) => <u className="text-light">{children}</u>,
-                      ul: ({ children }) => <ul className="text-light">{children}</ul>,
-                      ol: ({ children }) => <ol className="text-light">{children}</ol>,
+                      ul: ({ children }) => <ul className="mx-14 font-light text-sm text-left leading-9">{children}</ul>,
+                      ol: ({ children }) => <ol className="mx-14 font-light text-sm text-left leading-9">{children}</ol>,
+                     li: ({ children }) => <li className="mx-14 font-light text-sm text-left leading-9">{children}</li>,
 
                   
             

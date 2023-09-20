@@ -17,7 +17,7 @@ const PostDetail = ({ post }) => (
         <div className="mr-8 hidden items-center justify-center md:flex lg:mb-0 lg:w-auto">
           <img
             alt={post.author.name}
-            height="25px"
+            height="30px"
             width="30px"
             className="rounded-full align-middle"
             src={post.author.photo.url}

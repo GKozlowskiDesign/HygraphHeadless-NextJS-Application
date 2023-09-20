@@ -10,17 +10,18 @@ const PostCard = ({ post }) => {
           {/*    PostCard Row 1   */}
         <div className="grid grid-cols-6">
             
-         {/*    Column One       */}
+         {/*    Column One   */}     
             <div className="flex justify-left mb-2 lg:mb-0 w-full lg:w-auto mr-4 col-span-2 bg-gray-50 mx-auto rounded-xl p-1">
-                <img 
+                  {/*  <img 
                 src={post.author.photo.url}
                 alt={post.author.name}
                 height="20px"
                 width="20px"
                 className="align-middle rounded-full"
-                />
+                /> */}
                 <p className="inline text-center justify-centerp pt-1 md:pt-0 text-gray-700 ml-2 text-xs  md:text-sm">{post.author.name}</p>        
             </div>
+           
             
          {/*    Column Two       */}
             <div className="font-medium items-right  justify-center  text-gray-700 col-span-4 mb-4 lg:mb-0 flex">
